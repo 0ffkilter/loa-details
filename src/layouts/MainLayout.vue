@@ -221,13 +221,13 @@ onMounted(() => {
     }
   });
 
-  setInterval(() => {
-    if (!isUpdateAvailable.value) {
-      window.messageApi.send("window-to-main", {
-        message: "check-for-updates",
-      });
-    }
-  }, 60000);
+  //  setInterval(() => {
+  //    if (!isUpdateAvailable.value) {
+  //      window.messageApi.send("window-to-main", {
+  //        message: "check-for-updates",
+  //      });
+  //    }
+  //  }, 60000);
 
   window.messageApi.send("window-to-main", { message: "get-settings" });
 });
