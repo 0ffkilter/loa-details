@@ -13,7 +13,7 @@ export function createDamageMeterWindow(logParser, appSettings) {
     minWidth: 360,
     minHeight: 124,
     frame: false,
-    transparent: true,
+    transparent: false,
     opacity: appSettings?.damageMeter?.design?.opacity || 0.9,
     resizable: true,
     autoHideMenuBar: true,
