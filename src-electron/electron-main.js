@@ -96,14 +96,14 @@ try {
 
 app.whenReady().then(() => {
   // Don't create prelauncher if debugging
-  if (!process.env.DEBUGGING) {
-    prelauncherWindow = createPrelauncherWindow();
-    prelauncherWindow.on("show", () => {
-      checkForUpdates();
-    });
-  } else {
-    startApplication();
-  }
+  // if (!process.env.DEBUGGING) {
+  //prelauncherWindow = createPrelauncherWindow();
+  //   prelauncherWindow.on("show", () => {
+  //     //checkForUpdates();
+  //   });
+  // } else {
+  startApplication();
+  //
 });
 
 let prelauncherStatus = "open";
